@@ -1,0 +1,24 @@
+# Spring properties
+spring:
+  application:
+    name: integration-service
+  data:
+    mongodb:
+      uri: mongodb://mongoDbUser:mongoDbUserPassword@xx.xx.xx.xx:27017
+      database: logs
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+# HTTP Server
+server:
+  port: 9002   # HTTP (Tomcat) port
+
+ldap:
+  url: ldap://xx.xx.xx.xx:389
+  partitionSuffix: dc=xxx,dc=local
+  principal: cn=admin,dc=xxx,dc=local
+  password: xxx
